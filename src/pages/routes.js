@@ -1,4 +1,5 @@
 import HomePage from './home';
+import SchedulePage from './schedule';
 import DefaultTemplate from '~/templates/default';
 
 const routes = [
@@ -8,6 +9,13 @@ const routes = [
         title: 'Home page',
         template: DefaultTemplate,
         component: HomePage
+    },
+    {
+        path: '/schedule',
+        exact: true,
+        title: 'Schedule',
+        template: DefaultTemplate,
+        component: SchedulePage
     }
 ];
 
