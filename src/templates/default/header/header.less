@@ -1,0 +1,29 @@
+@import "vars";
+@import "../config";
+
+.default-template {
+  padding-top: calc(@header-height + @padding-default);
+  &:extend(.shadow-2);
+
+  .header {
+    position: fixed;
+    top:0 ; right: 0; left: 0;
+    height: @header-height;
+    background-color: @color-primary;
+
+    .title, button {
+      font: @font-lg;
+      line-height: @header-content-height;
+    }
+
+    button:hover {
+      background-color: @color-secondary;
+    }
+
+    > * {
+      padding: @header-padding;
+      line-height: @header-content-height;
+      color: @color-contrast;
+    }
+  }
+}

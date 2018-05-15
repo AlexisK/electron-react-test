@@ -1,0 +1,36 @@
+@import "config";
+
+.main-content {
+  margin: 0 @padding-default @padding-default @padding-default;
+  padding: @padding-default;
+  &:extend(.shadow-2);
+}
+
+.btn {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+  outline: none;
+}
+
+p {
+  margin-bottom: 1em;
+  color: @grey-2;
+}
+
+h1, h2 {
+  margin-bottom: 1em;
+  font: @font-xlg;
+  color: @color-primary;
+}
+h3, h4 {
+  margin-bottom: 1em;
+  font: @font-lg;
+  color: @grey-3;
+}
+h5, h6 {
+  margin-bottom: 1em;
+  font: @font-md-bold;
+  color: @grey-2;
+}

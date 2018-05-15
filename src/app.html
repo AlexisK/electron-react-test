@@ -1,0 +1,17 @@
+<Router>
+    <div>
+        {routes.map((route, index) => (
+        <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                render={props => (
+        <route.template title={route.title}>
+            <route.component {...props} routes={route.routes} />
+        </route.template>
+                )
+            }
+        />
+        ))}
+    </div>
+</Router>
